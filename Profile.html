@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Instagram</title>
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="shortcut icon" href="assets\logo.png" type="image/x-icon">
+  
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="header">
+                <div class="side-nav">
+                    <a href="#" class="logo">
+                        <img src="assets/Instagram.png" alt="instagram" class="logo-img">
+                        <img src="assets/insta-logo.png" class="logo-icon" alt="logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li ><a href="Index.html"><img src="assets/homepage.png" class="nav-img"
+                                    alt="home">
+                                <p>Home</p>
+                            </a></li>
+                        <li onclick="openSearchBox()"><a href="#"><img src="assets/search.png" class="nav-img" alt="search">
+                                <p>Search</p>
+                            </a></li>
+                        <li><a href="Explore.html"><img src="assets/explore.png" class="nav-img" alt="explore">
+                                <p>Explore</p>
+                            </a></li>
+                        <li><a href="#"><img src="assets/video.png" class="nav-img" alt="reels">
+                                <p> Reels</p>
+                            </a></li>
+                        <li><a href="Inbox.html"> <img src="assets/messenger.png" class="nav-img" alt="message">
+                                <p>Message</p>
+                            </a></li>
+                        <li><a href="#"> <img src="assets/notification.png" class="nav-img" alt="notification">
+                                <p>Notifications</p>
+                            </a></li>
+                        <li><a href="#"><img src="assets/create.png" class="nav-img" alt="create">
+                                <p>Create</p>
+                            </a></li>
+                        <li><a href="Profile.html"><img src="assets/profile.png" class="nav-img" alt="profile">
+                                <p>Profile</p>
+                            </a></li>
+
+                        <li class="more-option" onclick="toggleDropUpOptions()">
+                            <a href="#"><img src="assets/menu.png" class="nav-img" alt="more">
+                                <p>More</p>
+                            </a>
+                            <ul class="drop-up-options" id="dropUpOptions">
+                                <li><a href="#"><img src="assets/Setting.png" alt="Setting" class="nav-img">
+                                        Settings</a></li>
+                                <li><a href="#"><img src="assets/activity.png" alt="act" class="nav-img"> Your
+                                        Activities</a></li>
+                                <li><a href="#"><img src="assets/mark.png" alt="mark" class="nav-img"> Saved</a></li>
+                                <li><a href="#"><img src="assets/night-mode.png" alt="night" class="nav-img"> Switch
+                                        Apperacence</a></li>
+                                <li><a href="#"> ,<img src="assets/warning.png" alt="warning" class="nav-img">Report a
+                                        problem</a></li>
+                                <hr>
+                                <li><a href="#">Switch Account</a></li>
+                                <hr>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <div class="active"></div>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="search" id="find">
+                <h1>Search</h1>
+                <div class="box">
+                    <input type="text" placeholder="search" class="search-input">
+                </div>
+                <p>Recent</p>
+                <div class="output">
+                    <p>No Recent</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="main">
+                <div class="myprofile">
+                    <img src="assets/profile.png" class="profile-img" alt="profile">
+                    <div class="all">
+                        <div class="idnamesection">
+                            <h2>nitin_prajapati15</h2><button class="editbtn">Edit Profile</button><img
+                                src="assets/Setting.png" alt="settings" class="settingsicon">
+                            
+                        </div>
+                        <div class="followsection">
+                            <ul>
+                                <li><b>1</b> Post</li>
+                                <li><b>160</b> Followers</li>
+                                <li><b>99</b> Following</li>
+                            </ul>
+                        </div>
+                        <div class="nameandbio">
+                            <h4>Nitin Prajapati</h4>
+                            <p>Hello Nigga!!</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="postnav">
+                    <ul>
+                        <li><p> <img src="assets/feed.png" class="postnav_img" alt="post"> POST</p></li>
+                        <li><p> <img src="assets/mark.png" class="postnav_img" alt="post"> SAVED</p></li>
+                        <li><p> <img src="assets/tag.png" class="postnav_img" alt="post"> TAGGED</p></li>
+                    </ul>
+                </div>
+                <div class="posts">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="img_container">
+                                <img src="assets/post1.jpg" class="mypost_img" alt="post">
+                                <div class="after">
+                                      <div class="likes">
+                                        <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span class="liketext"><b>3</b></span></p>
+                                        <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span class="liketext"><b>10</b></span></p>
+                                    
+                                      </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="grid-item"></div> 
+                        <div class="grid-item"></div> 
+                      </div>
+                </div>
+                <div class="footer">
+                    <ul>
+                        <li> Meta</li>
+                        <li> About</li>
+                        <li> Blog</li>
+                        <li> Jobs</li>
+                        <li> Help</li>
+                        <li> API</li>
+                        <li> Privacy</li>
+                        <li> Terms</li>
+                        <li> Top Accounts</li>
+                        <li> Locations</li>
+                        <li> Instagram Lite</li>
+                        <li> Contact Uploading & Non-Users</li>
+                        <li>  Meta Verified</li>
+                    </ul>
+                    <p>© 2023 Instagram from Meta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var dropUpVisible = false;
+
+        function toggleDropUpOptions() {
+            var dropUpOptions = document.getElementById("dropUpOptions");
+            dropUpVisible = !dropUpVisible; // Toggle the drop-up visibility state
+            if (dropUpVisible) {
+                dropUpOptions.classList.add("show-drop-up");
+            } else {
+                dropUpOptions.classList.remove("show-drop-up");
+            }
+        }
+        var Searchbox = false;
+        function openSearchBox() {
+            var upsearchbox = document.getElementById("find");
+            Searchbox = !Searchbox;
+            if (Searchbox) {
+                upsearchbox.classList.add("show-search");
+
+            }
+            else {
+                upsearchbox.classList.remove("show-search");
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

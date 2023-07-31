@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.left-panel {
+    width: 100%;
+    max-width: 300px;
+}
+
+.right-panel {
+    width: 100%;
+    max-width: calc(100% - 300px);
+}
+
+
+.side-nav {
+    width: 245px;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    border-right: 1px solid lightgray;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.logo-img {
+    width: 110px;
+    margin-left: 10px;
+}
+
+.logo-icon {
+    width: 30px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    position: relative;
+
+}
+
+.nav-links li {
+    padding: 3px 0;
+    font-size: large;
+    width: 100%;
+    height: 60px;
+    transition: background-color 0.5s ease;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    padding: 15px 14px;
+    display: flex;
+}
+
+.nav-links li p {
+    margin-top: 5px;
+}
+
+.nav-img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+
+.nav-links li:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.nav-links li:hover a {
+    color: black;
+    transition: 0.3s;
+}
+
+
+.nav-links li:nth-child(8) {
+    margin-bottom: 80px;
+}
+
+.logo-icon {
+    display: none;
+}
+
+.more-section {
+    margin-top: 10px;
+
+}
+
+.more-section .drop-up-options {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    display: none;
+}
+
+.drop-up-options {
+    position: absolute;
+    bottom: 65px;
+    left: 60%;
+    width: 120%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    display: none;
+}
+
+.drop-up-options li {
+    list-style: none;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.drop-up-options hr {
+    margin: 0;
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+.drop-up-options li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.drop-up-options li a:hover {
+    background-color: #f5f5f5;
+}
+
+.show-drop-up {
+    display: block;
+}
+
+.search {
+    position: relative;
+    left: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    font-size: 20px;
+    border-left: 1px solid lightgrey;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    transition: left 0.3s ease;
+}
+
+.search h1 {
+    position: relative;
+    left: 40px; 
+    top: 20px;
+    font-size: 30px;
+
+}
+
+.box {
+    position: relative;
+    left: 20px;
+    top: 50px;
+    width: 90%;
+    height: 45px;
+}
+
+.box .search-input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: rgb(241, 240, 240);
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.output{
+    position: relative;
+    top: 40%;
+    left: 30%;
+    font-size: 16px;
+}
+.search p{
+    position: relative;
+    left: 35px;
+    top: 80px;
+}
+
+.show-search{
+    visibility: visible;
+    left: 70px;
+    z-index: 1;
+}
+
+
+.main {
+    width: 930px;
+    height: 700px;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.myprofile {
+    width: 930px;
+    height: 220px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.all {
+    margin-left: 80px;
+}
+
+.idnamesection {
+    display: flex;
+    margin-top: 30px;
+    width: 450px;
+    height: 32px;
+
+}
+
+.settingsicon {
+    width: 28px;
+    height: 28px;
+
+}
+
+.editbtn {
+    width: 100px;
+    height: 30px;
+    margin: 0 10px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+.editbtn:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.followsection {
+    margin-top: 10px;
+
+}
+
+.followsection ul {
+    display: flex;
+}
+
+.followsection ul li {
+    list-style: none;
+    padding: 10px;
+    margin-right: 40px;
+    padding-left: 0;
+}
+
+.nameandbio {
+    margin-top: 10px;
+}
+
+.postnav {
+    width: 930;
+    height: auto;
+}
+
+.postnav ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 0px;
+}
+
+.postnav ul li {
+    list-style: none;
+    padding: 10px;
+    padding-left: 0;
+    margin-right: 50px;
+}
+
+.postnav_img {
+    width: 15px;
+    vertical-align:middle;
+}
+
+.postnav ul li:nth-child(1) {
+    border-top: 1px solid black;
+}
+
+.postnav ul li:hover {
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+
+.posts {
+    margin-top: 15px;
+    width: 930px;
+    height: 300px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.grid-item {
+ margin: 0;
+}
+
+.mypost_img{
+    width: 300px;
+    height: 300px;
+}
+
+.footer{
+    margin-top: 30px;
+    font-size: 12px;
+}
+.footer ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: gray;
+}
+
+.footer ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.footer ul li:hover{
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+.footer p{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    color:gray;
+}
+
+.img_container{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.img_container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+.img_container:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+.likes{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    margin: 130px 100px;
+    text-align: center;
+}
+.likes p{
+    margin: 8px;
+}
+
+.like-img{
+    width: 20px;
+    vertical-align:middle;
+}
+.liketext{
+    font-size: 16px;
+    vertical-align:middle;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets\logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/91801a0ad2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="header">
+                <div class="side-nav">
+                    <a href="#" class="logo">
+                        <img src="assets/Instagram.png" alt="instagram" class="logo-img">
+                        <img src="assets/insta-logo.png" class="logo-icon" alt="logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li ><a href="#"><img src="assets/homepage.png" class="nav-img"
+                                    alt="home">
+                                <p>Home</p>
+                            </a></li>
+                        <li onclick="openSearchBox()"><a href="#"><img src="assets/search.png" class="nav-img" alt="search">
+                                <p>Search</p>
+                            </a></li>
+                        <li><a href="Explore.html"><img src="assets/explore.png" class="nav-img" alt="explore">
+                                <p>Explore</p>
+                            </a></li>
+                        <li><a href="#"><img src="assets/video.png" class="nav-img" alt="reels">
+                                <p> Reels</p>
+                            </a></li>
+                        <li><a href="Inbox.html"> <img src="assets/messenger.png" class="nav-img" alt="message">
+                                <p>Message</p>
+                            </a></li>
+                        <li><a href="#"> <img src="assets/notification.png" class="nav-img" alt="notification">
+                                <p>Notifications</p>
+                            </a></li>
+                        <li><a href="#"><img src="assets/create.png" class="nav-img" alt="create">
+                                <p>Create</p>
+                            </a></li>
+                        <li><a href="Profile.html"><img src="assets/profile.png" class="nav-img" alt="profile">
+                                <p>Profile</p>
+                            </a></li>
+
+                        <li class="more-option" onclick="toggleDropUpOptions()">
+                            <a href="#"><img src="assets/menu.png" class="nav-img" alt="more">
+                                <p>More</p>
+                            </a>
+                            <ul class="drop-up-options" id="dropUpOptions">
+                                <li><a href="#"><img src="assets/Setting.png" alt="Setting" class="nav-img">
+                                        Settings</a></li>
+                                <li><a href="#"><img src="assets/activity.png" alt="act" class="nav-img"> Your
+                                        Activities</a></li>
+                                <li><a href="#"><img src="assets/mark.png" alt="mark" class="nav-img"> Saved</a></li>
+                                <li><a href="#"><img src="assets/night-mode.png" alt="night" class="nav-img"> Switch
+                                        Apperacence</a></li>
+                                <li><a href="#"> ,<img src="assets/warning.png" alt="warning" class="nav-img">Report a
+                                        problem</a></li>
+                                <hr>
+                                <li><a href="#">Switch Account</a></li>
+                                <hr>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <div class="active"></div>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="search" id="find">
+                <h1>Search</h1>
+                <div class="box">
+                    <input type="text" placeholder="search" class="search-input">
+                </div>
+                <p>Recent</p>
+                <div class="output">
+                    <p>No Recent</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="main">
+
+                <div class="post">
+                    <div class="scrollable">
+                        <div class="smnav">
+                            <a href="Index.html" style="text-decoration: none;"><img src="assets/insta-logo.png"
+                                    class="smlogo-icon" alt="logo"></a>
+                            <input type="text" class="search-input" placeholder="Search">
+                            <img src="assets/notification.png" class="smnav-img" alt="notification">
+                        </div>
+                        <div class="stories">
+                            <img src="assets/stroies.jpg" class="storeis-img" alt="stories">
+                        </div>
+                        <div class="user-post">
+                            <div class="card">
+                                <div class="card-title">
+                                    <a href="#"><img src="assets/profile.png" class="profile-img" alt="userprofile">
+                                        <p>indianairfore</p><img src="assets/bluetick.jpg" class="bluetick"
+                                            alt="bluetick"><span class="three-dots">...</span>
+                                    </a>
+                                </div>
+                                <div class="card-img">
+                                    <img src="assets/airforce.jpg" class="post-img" alt="iaf">
+                                </div>
+                                <div class="card-body">
+                                    <div class="likesharebutton">
+                                        <img src="assets/notification.png" class="nav-img" alt="like">
+                                        <img src="assets/chat.png" class="nav-img" alt="comment">
+                                        <img src="assets/send.png" class="nav-img" alt="share">
+                                        <img src="assets/mark.png" class="nav-img save" alt="save">
+                                    </div>
+                                    <div class="">
+                                        <p class="like">6969 likes</p>
+                                        <p class="like"><strong>indianairfore</strong> Fly to the sky...</p>
+                                        <p class="comment">View all 69 Comments..</p>
+                                        <p style="font-size: 12px; margin-left: 7px ; margin-top: 8px; color: gray;">4
+                                            Hour
+                                            ago</p>
+
+                                    </div>
+                                    <div class="comment-box">
+                                        <img src="assets/emoji.jpg" alt="emoji" class="emoji">
+                                        <input type="text" placeholder="Add comment.." class="input">
+                                        <p
+                                            style="color: blue; margin-left: 25px; margin-top: 10px; font-size: large; cursor: pointer;">
+                                            Post</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="user-postb">
+                            <div class="card">
+                                <div class="card-title">
+                                    <a href="#"><img src="assets/marvale.webp" class="profile-img" alt="userprofile">
+                                        <p>marvelmovies</p><img src="assets/bluetick.jpg" class="bluetick"
+                                            alt="bluetick"><span class="three-dots">...</span>
+                                    </a>
+                                </div>
+                                <div class="card-img">
+                                    <img src="assets/bunny.jpg" class="post-img" alt="iaf">
+                                </div>
+                                <div class="card-body">
+                                    <div class="likesharebutton">
+                                        <img src="assets/notification.png" class="nav-img" alt="like">
+                                        <img src="assets/chat.png" class="nav-img" alt="comment">
+                                        <img src="assets/send.png" class="nav-img" alt="share">
+                                        <img src="assets/mark.png" class="nav-img save" alt="save">
+                                    </div>
+                                    <div class="">
+                                        <p class="like">69690 likes</p>
+                                        <p class="like"><strong>marvelmovies</strong> Marvel-inspired bunnies 🐰</p>
+                                        <p class="comment">View all 69 Comments..</p>
+                                        <p style="font-size: 12px; margin-left: 7px ; margin-top: 8px; color: gray;">6
+                                            Hour
+                                            ago</p>
+
+                                    </div>
+                                    <div class="comment-box">
+                                        <img src="assets/emoji.jpg" alt="emoji" class="emoji">
+                                        <input type="text" placeholder="Add comment.." class="input">
+                                        <p
+                                            style="color: blue; margin-left: 25px; margin-top: 10px; font-size: large; cursor: pointer;">
+                                            Post</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="allcatchup">
+                            <img src="assets/allcatchup.jpg" style="width: 200px; margin-top: 20px;" alt="allcatchup">
+                            <div style="margin-top: 30px;">
+                                <p style="font-size: 25px; margin-top: 8px;">You're all caught up</p>
+                                <p style="color:gray; margin-top: 8px;">You've seen all new posts from the past 3 days.
+                                </p>
+                                <p style="color: blue; margin-top: 8px; font-size: 18px; cursor: pointer;">View Old
+                                    Posts
+                                </p>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="fixed">
+                        <a href="Index.html" style="text-decoration: none;"> <img src="assets/homepage.png"
+                                class="bottombar-img" alt="home"></a>
+                        <a href="Explore.html" style="text-decoration: none;"> <img src="assets/explore.png"
+                                class="bottombar-img" alt="home"></a>
+                        <a href="Index.html" style="text-decoration: none;"> <img src="assets/video.png"
+                                class="bottombar-img" alt="home"></a>
+                        <a href="Index.html" style="text-decoration: none;"> <img src="assets/create.png"
+                                class="bottombar-img" alt="home"></a>
+                        <a href="Inbox.html" style="text-decoration: none;"> <img src="assets/messenger.png"
+                                class="bottombar-img" alt="home"></a>
+                        <a href="Profile.html" style="text-decoration: none;"> <img src="assets/profile.png"
+                                class="bottombar-imga" alt="home"></a>
+                    </div>
+                </div>
+                <div class="profile-section">
+                    <div class="myprofile">
+                        <img src="assets/profile.png" alt="profile" class="myprofile-img">
+                        <p style=" margin-top: 15px; margin-top: 25px; font-size: large; cursor: pointer;">
+                            nitin_prajapati15<br><span style="color:gray; margin-top: 5px;">Nitin Prajapati</span></p>
+                        <span
+                            style="color:blue; margin-left: 130px; margin-top: 30px; font-size: large; cursor: pointer;">Switch</span>
+                    </div>
+                    <div class="suggestion">
+                        <p style="color: gray;">Suggestions For You</p><span
+                            style="margin-left: 188px; color: gray;">See All</span>
+                        <br><br>
+                    </div>
+                    <div class="myprofile">
+                        <img src="assets/profile.png" alt="profile" class="suggprofile-img">
+                        <p style="  margin-top: 5px; cursor: pointer;">senju4567<br><span
+                                style="color:gray; margin-top: 5px;">suggested for you</span></p><span
+                            style="color:blue; margin-left: 180px; margin-top: 8px;  cursor: pointer;">Follow</span>
+                    </div><br>
+                    <div class="myprofile">
+                        <img src="assets/profile.png" alt="profile" class="suggprofile-img">
+                        <p style="  margin-top: 5px; cursor: pointer;">Arrjuu69<br><span
+                                style="color:gray; margin-top: 5px;">suggested for you</span></p><span
+                            style="color:blue; margin-left: 180px; margin-top: 8px;  cursor: pointer;">Follow</span>
+                    </div><br>
+                    <div class="myprofile">
+                        <img src="assets/profile.png" alt="profile" class="suggprofile-img">
+                        <p style="  margin-top: 5px; cursor: pointer;">Mohitooo_wb23<br><span
+                                style="color:gray; margin-top: 5px;">suggested for you</span></p><span
+                            style="color:blue; margin-left: 180px; margin-top: 8px; cursor: pointer;">Follow</span>
+                    </div>
+                    <div class="links">
+                        <p style="color:gray;  font-size: 14px; cursor: pointer;">About . Help . Press . API . Jobs .
+                            Privacy . Terms . Location . <br>Language . Meta Verified</p>
+                    </div>
+                    <div>
+                        <p style="margin-top: 20px; color:gray; font-size: 14px;">© 2023 INSTAGRAM FROM META</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            var dropUpVisible = false;
+
+            function toggleDropUpOptions() {
+                var dropUpOptions = document.getElementById("dropUpOptions");
+                dropUpVisible = !dropUpVisible; // Toggle the drop-up visibility state
+                if (dropUpVisible) {
+                    dropUpOptions.classList.add("show-drop-up");
+                } else {
+                    dropUpOptions.classList.remove("show-drop-up");
+                }
+            }
+            var Searchbox = false;
+            function openSearchBox() {
+                var upsearchbox = document.getElementById("find");
+                Searchbox = !Searchbox;
+                if (Searchbox) {
+                    upsearchbox.classList.add("show-search");
+
+                }
+                else {
+                    upsearchbox.classList.remove("show-search");
+
+                }
+            }
+
+        </script>
+
+</body>
+
+</html>

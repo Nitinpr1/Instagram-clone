@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore | Instagram</title>
+    <link rel="shortcut icon" href="assets\logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Explore.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="header">
+                <div class="side-nav">
+                    <a href="#" class="logo">
+                        <img src="assets/Instagram.png" alt="instagram" class="logo-img">
+                        <img src="assets/insta-logo.png" class="logo-icon" alt="logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="Index.html"><img src="assets/homepage.png" class="nav-img" alt="home">
+                                <p>Home</p>
+                            </a></li>
+                        <li onclick="openSearchBox()"><a href="#"><img src="assets/search.png" class="nav-img"
+                                    alt="search">
+                                <p>Search</p>
+                            </a></li>
+                        <li><a href="Explore.html"><img src="assets/explore.png" class="nav-img" alt="explore">
+                                <p>Explore</p>
+                            </a></li>
+                        <li><a href="#"><img src="assets/video.png" class="nav-img" alt="reels">
+                                <p> Reels</p>
+                            </a></li>
+                        <li><a href="Inbox.html"> <img src="assets/messenger.png" class="nav-img" alt="message">
+                                <p>Message</p>
+                            </a></li>
+                        <li><a href="#"> <img src="assets/notification.png" class="nav-img" alt="notification">
+                                <p>Notifications</p>
+                            </a></li>
+                        <li><a href="#"><img src="assets/create.png" class="nav-img" alt="create">
+                                <p>Create</p>
+                            </a></li>
+                        <li><a href="Profile.html"><img src="assets/profile.png" class="nav-img" alt="profile">
+                                <p>Profile</p>
+                            </a></li>
+
+                        <li class="more-option" onclick="toggleDropUpOptions()">
+                            <a href="#"><img src="assets/menu.png" class="nav-img" alt="more">
+                                <p>More</p>
+                            </a>
+                            <ul class="drop-up-options" id="dropUpOptions">
+                                <li><a href="#"><img src="assets/Setting.png" alt="Setting" class="nav-img">
+                                        Settings</a></li>
+                                <li><a href="#"><img src="assets/activity.png" alt="act" class="nav-img"> Your
+                                        Activities</a></li>
+                                <li><a href="#"><img src="assets/mark.png" alt="mark" class="nav-img"> Saved</a></li>
+                                <li><a href="#"><img src="assets/night-mode.png" alt="night" class="nav-img"> Switch
+                                        Apperacence</a></li>
+                                <li><a href="#"> ,<img src="assets/warning.png" alt="warning" class="nav-img">Report a
+                                        problem</a></li>
+                                <hr>
+                                <li><a href="#">Switch Account</a></li>
+                                <hr>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <div class="active"></div>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="search" id="find">
+                <h1>Search</h1>
+                <div class="box">
+                    <input type="text" placeholder="search" class="search-input">
+                </div>
+                <p>Recent</p>
+                <div class="output">
+                    <p>No Recent</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="main">
+                <div class="item">
+                    <div class="img_container">
+                        <img src="assets/ex3.jpeg" alt="post1" class="imgs">
+                        <div class="after">
+                            <div class="likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="img_container">
+                        <img src="assets/padosi.jfif" alt="post2" class="imgs">
+                        <div class="after">
+                            <div class="likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="vid_container">
+                        <video class="vida" autoplay muted>
+                            <source src="assets/video1.mp4" type="video/mp4">
+                        </video>
+                        <div class="after">
+                            <div class="vid_likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="img_container">
+                        <img src="assets/meet.jpg" alt="post3" class="imgs">
+                        <div class="after">
+                            <div class="likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="vid_container">
+                        <video class="vida" autoplay muted>
+                            <source src="assets/vido.mp4" type="video/mp4">
+                        </video>
+                        <div class="after">
+                            <div class="vid_likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="img_container">
+                        <img src="assets/minato.jfif" alt="post4" class="imgs">
+                        <div class="after">
+                            <div class="likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="img_container">
+                        <img src="assets/sims.png" alt="post5" class="imgs">
+                        <div class="after">
+                            <div class="likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="img_container">
+                        <img src="assets/unf.jfif" alt="post6" class="imgs">
+                        <div class="after">
+                            <div class="likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="img_container">
+                        <img src="assets/ex6.jpg" alt="post2" class="imgs">
+                        <div class="after">
+                            <div class="likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img_container">
+                        <img src="assets/chill.jfif" alt="post2" class="imgs">
+                        <div class="after">
+                            <div class="likes">
+                                <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                        class="liketext"><b>3</b></span></p>
+                                <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script>
+        var dropUpVisible = false;
+
+        function toggleDropUpOptions() {
+            var dropUpOptions = document.getElementById("dropUpOptions");
+            dropUpVisible = !dropUpVisible; // Toggle the drop-up visibility state
+            if (dropUpVisible) {
+                dropUpOptions.classList.add("show-drop-up");
+            } else {
+                dropUpOptions.classList.remove("show-drop-up");
+            }
+        }
+        var Searchbox = false;
+        function openSearchBox() {
+            var upsearchbox = document.getElementById("find");
+            Searchbox = !Searchbox;
+            if (Searchbox) {
+                upsearchbox.classList.add("show-search");
+
+            }
+            else {
+                upsearchbox.classList.remove("show-search");
+
+            }
+        }
+    </script>
+</body>
+
+</html>

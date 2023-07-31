@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox | Instagram</title>
+    <link rel="stylesheet" href="Inbox.css">
+    <link rel="shortcut icon" href="assets\logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="header">
+                <div class="side-nav">
+                    <a href="Index.html" class="logo">
+                        <img src="assets/Instagram.png" alt="instagram" class="logo-img">
+                        <img src="assets/insta-logo.png" class="logo-icon" alt="logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="Index.html"><img src="assets/homepage.png" class="nav-img" alt="home">
+
+                            </a></li>
+                        <li onclick="openSearchBox()"><a href="#"><img src="assets/search.png" class="nav-img"
+                                    alt="search">
+
+                            </a></li>
+                        <li><a href="Explore.html"><img src="assets/explore.png" class="nav-img" alt="explore">
+
+                            </a></li>
+                        <li><a href="#"><img src="assets/video.png" class="nav-img" alt="reels">
+
+                            </a></li>
+                        <li><a href="Inbox.html"> <img src="assets/messenger.png" class="nav-img" alt="message">
+
+                            </a></li>
+                        <li><a href="#"> <img src="assets/notification.png" class="nav-img" alt="notification">
+
+                            </a></li>
+                        <li><a href="#"><img src="assets/create.png" class="nav-img" alt="create">
+
+                            </a></li>
+                        <li><a href="Profile.html"><img src="assets/profile.png" class="nav-img" alt="profile">
+
+                            </a></li>
+
+                        <li class="more-option" onclick="toggleDropUpOptions()">
+                            <a href="#"><img src="assets/menu.png" class="nav-img" alt="more">
+
+                            </a>
+                            <ul class="drop-up-options" id="dropUpOptions">
+                                <li><a href="#"><img src="assets/Setting.png" alt="Setting" class="nav-img">
+                                        Settings</a></li>
+                                <li><a href="#"><img src="assets/activity.png" alt="act" class="nav-img"> Your
+                                        Activities</a></li>
+                                <li><a href="#"><img src="assets/mark.png" alt="mark" class="nav-img"> Saved</a></li>
+                                <li><a href="#"><img src="assets/night-mode.png" alt="night" class="nav-img"> Switch
+                                        Apperacence</a></li>
+                                <li><a href="#"> ,<img src="assets/warning.png" alt="warning" class="nav-img">Report a
+                                        problem</a></li>
+                                <hr>
+                                <li><a href="#">Switch Account</a></li>
+                                <hr>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <div class="active"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="search" id="find">
+                <h1>Search</h1>
+                <div class="box">
+                    <input type="text" placeholder="search" class="search-input">
+                </div>
+                <p>Recent</p>
+                <div class="output">
+                    <p>No Recent</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="main">
+                <div class="smnav">
+                    <a href="Index.html" style="text-decoration: none;"><img src="assets/insta-logo.png"
+                            class="smlogo-icon" alt="logo"></a>
+                    <input type="text" class="search-input" placeholder="Search">
+                    <img src="assets/notification.png" class="smnav-img" alt="notification">
+                </div>
+                <div class="all-chat">
+                    <div class="myaccount">
+                        <h2>nitin_prajapati   ⊽</h2>
+                        <img src="assets/edit.png" class="nav-img" alt="edit">
+                    </div>
+                    <div class="heading">
+                        <p class="m">Messages</p>
+                        <p class="r">Requests</p>
+                    </div>
+                    <div class="scrollable">
+                        <div class="persons">
+                            <img src="assets/p1.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                 The_simps<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">The_simps sent a
+                                    message. 1h</span></p>
+                            <span style="color: blue; margin-left: 80px;  font-size: 70px;">.</span>
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p5.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                Mob_100<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">Mob_100 sent a
+                                    message. 1h</span></p>
+                            <span style="color: blue; margin-left: 85px;  font-size: 70px;">.</span>
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p3.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                 NINA_jojo<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">NINA_jojo sent a
+                                    message. 8h</span></p>
+                            <span style="color: blue; margin-left: 75px;  font-size: 70px;">.</span>
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p6.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                Hatake_kakashi<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">Hatake_kakashi sent a
+                                    message. 9h</span></p>
+
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p2.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                 Gojo_sempai<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">Gojo_sempai sent a
+                                    message. 9h</span></p>
+
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p4.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                Arjun_prajapati<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">Arjun_prajapati sent a
+                                    message. 10h</span></p>
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p1.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                Simps_aka<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">Simps_aka sent a
+                                    message. 10h</span></p>
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p5.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                Tom_theSpider<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">Tom_theSpider sent a
+                                    message. 11h</span></p>
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p3.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                Mona_jiji<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">Mona_jiji sent a
+                                    message. 11h</span></p>
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p6.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                Radhe_123<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">Radhe_123 sent a
+                                    message. 11h</span></p>
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p4.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                 Mujaan_Jackson<br><span
+                                    style="color:gray; font-size: 14px; margin-top: 5px;">Mujaan_Jackson sent a
+                                    message. 1h</span></p>
+                        </div>
+                    
+
+                    </div>
+                </div>
+                <div class="fixed">
+                    <a href="Index.html" style="text-decoration: none;"> <img src="assets/homepage.png"
+                            class="bottombar-img" alt="home"></a>
+                    <a href="Explore.html" style="text-decoration: none;"> <img src="assets/explore.png"
+                            class="bottombar-img" alt="home"></a>
+                    <a href="Index.html" style="text-decoration: none;"> <img src="assets/video.png"
+                            class="bottombar-img" alt="home"></a>
+                    <a href="Index.html" style="text-decoration: none;"> <img src="assets/create.png"
+                            class="bottombar-img" alt="home"></a>
+                    <a href="Inbox.html" style="text-decoration: none;"> <img src="assets/messenger.png"
+                            class="bottombar-img" alt="home"></a>
+                    <a href="Profile.html" style="text-decoration: none;"> <img src="assets/profile.png"
+                            class="bottombar-imga" alt="home"></a>
+                </div>
+                <div class="chatbox">
+                    <div class="msgnow">
+                        <img src="assets/messenger.jpg" alt="messenger">
+                        <h3>Your Messages</h3>
+                        <p>Send private photos and messages to a friend or group</p>
+                        <button>Message</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var dropUpVisible = false;
+
+        function toggleDropUpOptions() {
+            var dropUpOptions = document.getElementById("dropUpOptions");
+            dropUpVisible = !dropUpVisible; // Toggle the drop-up visibility state
+            if (dropUpVisible) {
+                dropUpOptions.classList.add("show-drop-up");
+            } else {
+                dropUpOptions.classList.remove("show-drop-up");
+            }
+        }
+        var Searchbox = false;
+        function openSearchBox() {
+            var upsearchbox = document.getElementById("find");
+            Searchbox = !Searchbox;
+            if (Searchbox) {
+                upsearchbox.classList.add("show-search");
+
+            }
+            else {
+                upsearchbox.classList.remove("show-search");
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
