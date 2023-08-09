@@ -21,11 +21,11 @@
                         <img src="assets/insta-logo.png" class="logo-icon" alt="logo">
                     </a>
                     <ul class="nav-links">
-                        <li ><a href="#"><img src="assets/homepage.png" class="nav-img"
-                                    alt="home">
+                        <li><a href="#"><img src="assets/homepage.png" class="nav-img" alt="home">
                                 <p>Home</p>
                             </a></li>
-                        <li onclick="openSearchBox()"><a href="#"><img src="assets/search.png" class="nav-img" alt="search">
+                        <li onclick="openSearchBox()"><a href="#"><img src="assets/search.png" class="nav-img"
+                                    alt="search">
                                 <p>Search</p>
                             </a></li>
                         <li><a href="Explore.html"><img src="assets/explore.png" class="nav-img" alt="explore">
@@ -37,10 +37,12 @@
                         <li><a href="Inbox.html"> <img src="assets/messenger.png" class="nav-img" alt="message">
                                 <p>Message</p>
                             </a></li>
-                        <li><a href="#"> <img src="assets/notification.png" class="nav-img" alt="notification">
+                        <li onclick="openNotibox()"><a href="#"> <img src="assets/notification.png" class="nav-img"
+                                    alt="notification">
                                 <p>Notifications</p>
                             </a></li>
-                        <li><a href="#"><img src="assets/create.png" class="nav-img" alt="create">
+                        <li onclick="opencreatebox()"><a href="#"><img src="assets/create.png" class="nav-img"
+                                    alt="create">
                                 <p>Create</p>
                             </a></li>
                         <li><a href="Profile.html"><img src="assets/profile.png" class="nav-img" alt="profile">
@@ -83,10 +85,99 @@
                     <p>No Recent</p>
                 </div>
             </div>
+            <div class="notification" id="notification-box">
+                <div class="all-notifications">
+                    <h2>Notifications</h2>
+                    <div class="scrollable-noti">
+                        <h5>Today</h5>
+                        <div class="persons">
+                            <img src="assets/p1.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 25px; font-size: large; cursor: pointer;">
+                                The_simps<br><span style="color:gray; font-size: 14px; margin-top: 5px;">The_simps
+                                    Follows you
+                                    . 1h</span></p>
+                        </div>
+                        <br>
+                        <hr style="margin: 5px;">
+                        <h5>This Week</h5>
+                        <div class="persons">
+                            <img src="assets/p2.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 5px; font-size: large; cursor: pointer;">
+                                simpo__<br><span style="color:gray; font-size: 14px; margin-top: 5px;">simpo__ started
+                                    following you.
+                                    1d</span></p>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        <br>
+                        <hr style="margin: 5px;">
+                        <h5>This Month</h5>
+                        <div class="persons">
+                            <img src="assets/p4.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 5px; font-size: large; cursor: pointer;">
+                                Arjun_1<br><span style="color:gray; font-size: 14px; margin-top: 5px;">Arjun_1 who you
+                                    might know. 1w
+                                </span></p>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p6.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 5px; font-size: large; cursor: pointer;">
+                                The_Hatake<br><span style="color:gray; font-size: 14px; margin-top: 5px;">The_Hatake
+                                    sent
+                                    a
+                                    message. 1w </span></p>
+
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p2.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 5px; font-size: large; cursor: pointer;">
+                                The_simps<br><span style="color:gray; font-size: 14px; margin-top: 5px;">The_simps likes
+                                    your post. 1w
+                                </span></p>
+                            <img src="assets/p5.jfif" class="mypost-img" alt="post">
+
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p7.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 5px; font-size: large; cursor: pointer;">
+                                J_Rey<br><span style="color:gray; font-size: 14px; margin-top: 5px;">J_Rey sent
+                                    a
+                                    message. 2w</span></p>
+
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p6.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 5px; font-size: large; cursor: pointer;">
+                                K_Fang<br><span style="color:gray; font-size: 14px; margin-top: 5px;">K_Fangsent
+                                    a
+                                    message. 3w</span></p>
+
+                        </div>
+                        <div class="persons">
+                            <img src="assets/p1.jfif" class="myprofile-img" alt="profileimg">
+                            <p style=" margin-top: 5px; font-size: large; cursor: pointer;">
+                                The_simps<br><span style="color:gray; font-size: 14px; margin-top: 5px;">The_simps sent
+                                    a
+                                    message. 4w</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="right-panel">
             <div class="main">
-
+                <div class="create" id="create-post">
+                    <div class="head">
+                        <h3>Create a Post</h3>
+                        <img src="assets/close.png" alt="close" class="close-img" onclick="closecreate()">
+                    </div>
+                    <div class="create-prompt">
+                        <img src="assets/create-post.jpg" alt="create-post">
+                        <h2>Drag photos and videos here</h2>
+                        <button>select from computer</button>
+                    </div>
+                </div>
                 <div class="post">
                     <div class="scrollable">
                         <div class="smnav">
@@ -270,7 +361,36 @@
 
                 }
             }
+            var Notibox = false;
+            function openNotibox() {
+                var upnotibox = document.getElementById("notification-box");
+                Notibox = !Notibox;
+                if (Notibox) {
+                    upnotibox.classList.add("show-notificaion");
 
+                }
+                else {
+                    upnotibox.classList.remove("show-notificaion");
+
+                }
+            }
+            var postbox = false;
+            function opencreatebox() {
+                var upbox = document.getElementById("create-post");
+                postbox = !postbox;
+                if (postbox) {
+                    upbox.classList.add("show-createbox");
+
+                }
+                else {
+                    upbox.classList.remove("show-createbox");
+
+                }
+            }
+            function closecreate() {
+                var upbox = document.getElementById("create-post");
+                upbox.classList.remove("show-createbox");
+            }
         </script>
 
 </body>
